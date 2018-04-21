@@ -20,7 +20,6 @@ class Series_page extends Component{
 
     getNextGame = () => {
         axios.get(`https://cors-anywhere.herokuapp.com/https://data.nba.net/data/10s/prod/v1/2017/teams/${this.props.location.state.series.topRow.teamId}/schedule.json`).then((resp)=>{
-            console.log(resp);
             if(resp.status === 200){
                 const gameNum = resp.data.league.lastStandardGamePlayedIndex + 1;
                 const gameDay = resp.data.league.standard[gameNum].startDateEastern;
@@ -53,7 +52,6 @@ class Series_page extends Component{
         }
         let {series, topTeam, bottomTeam, nextGame} = this.state;
         let {topRow, bottomRow} = this.state.series;
-        console.log(this.state);
         return(
             <div className="series_page_cover">
                 <div className="series-info">
@@ -76,7 +74,7 @@ class Series_page extends Component{
                             const url = `https://www.youtube.com/embed/${videoID}`;
                             return(
                                 <div key={video.etag} className="contain-vid embed-responsive embed-responsive-16by9">
-                                    <iframe className="embed-responsive-item" key={video.etag} src={url}></iframe>
+                                    <iframe title={video.etag} className="embed-responsive-item" key={video.etag} src={url}></iframe>
                                 </div>
                             )
                         })
