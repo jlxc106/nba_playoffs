@@ -1,0 +1,259 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.west{
+  position: absolute;
+  font-size: 25px;
+  top: 22.75vh;
+  left: 0;
+  padding-left: 10%;
+}
+
+.east{
+  position: absolute;
+  font-size: 25px;
+  top: 72.75vh;
+  left: 0;
+  padding-left: 10%;
+}
+
+.contain_series{
+  display: block;
+  width: 250px;
+  position: absolute;
+  background-color: wheat;
+  text-align: center;
+  /* height: 85px; */
+  border: 2px solid black;
+}
+
+.contain-bracket{
+  top: 10px;
+  display: inline-block;
+  position: relative;
+  width: 93vw;
+  height: 55vw;
+  /* background-image: url(https://hdwallsource.com/img/2014/7/nba-logo-wallpaper-41588-42564-hd-wallpapers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  padding-left: 30px;
+}
+
+.page-header{
+  width: 100vw;
+  height: 50px;
+  font-size: 46px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  /* text-shadow: 10px 10px; */
+}
+
+.left-column{
+  /* font-size: 30; */
+  font-weight: bold;
+  width: 5vw;
+  height: 55vw;
+  display: inline-block;
+  position: relative;
+  /* padding-right: 30px; */
+}
+
+
+.team-won{
+  font-size: 105%;
+  font-weight: bolder;
+  background-color: red;
+  color: white;
+}
+
+.col0{
+  left: 3vw;
+}
+
+.col1{
+  left: 28vw;
+}
+
+.col2{
+  left: 50vw;
+}
+
+.col3{
+  left: 70vw;
+}
+
+
+.row0{
+  top: 20px;
+}
+.row1{
+  top: 120px;
+}
+.row2{
+  top: 220px;
+}
+.row3{
+  top: 320px;
+}
+.row4{
+  top: 420px;
+}
+.row5{
+  top: 520px;
+}
+.row6{
+  top: 620px;
+}
+.row7{
+  top: 720px;
+}
+.row8{
+  top: 70px;
+}
+.row9{
+  top: 270px;
+}
+.row10{
+  top: 470px;
+}
+.row11{
+  top: 670px;
+}
+.row12{
+  top: 170px;
+}
+.row13{
+  top: 570px;
+}
+.row14{
+  top: 370px;
+}
+.highlightDiv:hover{
+  box-shadow: 10px 10px;
+}
+/* 
+.connectors {
+  float: left;
+  min-width: 35px;
+}
+.connectors.r-of-2 .top-line {
+  position: relative;
+  top: 30px;
+  width: 17px;
+  border: 1px solid #AAA;
+}
+.connectors.r-of-2 .bottom-line {
+  position: relative;
+  top: 81px;
+  width: 17px;
+  border: 1px solid #AAA;
+}
+.connectors.r-of-2 .vert-line {
+  position: relative;
+  top: 26px;
+  left: -16px;
+  height: 55px;
+  border-right: 2px solid #AAA;
+}
+.connectors.r-of-2 .next-line {
+  position: relative;
+  top: -4px;
+  left: 17px;
+  width: 17px;
+  border: 1px solid #AAA;
+}
+.clear {
+  clear: both;
+} */
+
+#root{
+  background-image: url(https://images5.alphacoders.com/467/thumb-1920-467394.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.team-info{
+  display: inline-block;
+  width: 50%;
+  height: 400px;
+  outline: 2px solid red;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back-button{
+  position: relative;
+  display: block;
+  margin: 10px;
+  font-size: 20px;
+  top: 10px;
+
+}
+
+.series_page_cover{
+  /* background-image: url(https://images5.alphacoders.com/467/thumb-1920-467394.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100%;
+  color: white;
+}
+
+.contain-youtube{
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  text-align: center;
+}
+.series-info{
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contain-vid{
+  width: 60%;
+  display: inline-block;
+  margin: 10px;
+}
+.video-title{
+  width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bolder;
+}
